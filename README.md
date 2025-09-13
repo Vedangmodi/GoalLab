@@ -9,6 +9,7 @@ GoalLab is an AI-powered learning platform that helps users achieve their goals 
 
 ---
 
+
 ## 🚀 Features  
 - **User Authentication** – Secure JWT-based registration and login  
 - **Goal Management** – Create, edit, and track learning goals  
@@ -18,7 +19,9 @@ GoalLab is an AI-powered learning platform that helps users achieve their goals 
 - **Check-in System** – Regular progress assessments and reflections  
 - **Responsive Design** – Works seamlessly on desktop and mobile  
 
+
 ---
+
 
 ## 🏗️ Project Architecture  
 
@@ -58,7 +61,8 @@ GoalLab/
 - Node.js 16+  
 - Python 3.8+  
 - MongoDB 6.0+  
-- OpenAI API Key  
+- OpenAI API Key
+  
 
 ### Backend Setup  
 ```bash
@@ -75,8 +79,10 @@ Start MongoDB:
 # macOS
 brew services start mongodb/brew/mongodb-community
 
+
 # Ubuntu
 sudo systemctl start mongod
+
 
 # Windows
 net start MongoDB
@@ -88,6 +94,8 @@ cd frontend
 npm install
 npm run dev
 App will be available at: http://localhost:5173
+
+
 📖 API Documentation
 Swagger UI → http://localhost:8000/docs
 ReDoc → http://localhost:8000/redoc
@@ -99,6 +107,8 @@ POST	/api/goals	Create new goal
 PUT	/api/goals/{id}	Update goal
 DELETE	/api/goals/{id}	Delete goal
 WS	/ws/tutor/{user_id}	AI Tutor WebSocket
+
+
 🎯 Usage Guide
 Creating Your First Goal
 Register/Login
@@ -115,6 +125,8 @@ Regular Check-ins
 Go to Check-in Section
 Record accomplishments
 Note challenges & plan next steps
+
+
 🔧 Configuration
 Backend Environment Variables
 Variable	Description	Default
@@ -126,6 +138,8 @@ Frontend Configuration
 Update API base URL in src/api/auth.js and src/api/goals.js:
 const API = axios.create({ baseURL: "http://localhost:8000/api" });
 For production → set environment variables in hosting provider.
+
+
 🧪 Testing
 Backend Tests
 cd backend
@@ -135,14 +149,16 @@ Frontend Tests
 cd frontend
 npm test
 npm test -- --coverage
+
+
 🤝 Contributing
 Fork the repo
 Create branch → git checkout -b feature/my-feature
 Commit changes → git commit -m "Add feature"
 Push branch → git push origin feature/my-feature
 Open Pull Request
-📝 License
-This project is licensed under the MIT License. See LICENSE for details.
+
+
 🆘 Support
 If you face issues:
 Check API docs
@@ -150,6 +166,8 @@ Review console errors
 Verify environment variables
 Ensure MongoDB is running
 Or open an issue in this repository.
+
+
 🙏 Acknowledgments
 OpenAI – GPT integration
 FastAPI – Backend framework
