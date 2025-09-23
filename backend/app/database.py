@@ -3,7 +3,7 @@ from pymongo.errors import ConnectionFailure
 import asyncio
 
 # MongoDB connection string
-MONGODB_URL = "mongodb://localhost:27017"
+MONGODB_URL = os.getenv("MONGODB_URL", "mongodb://localhost:27017")
 
 try:
     client = AsyncIOMotorClient(MONGODB_URL, serverSelectionTimeoutMS=5000)
